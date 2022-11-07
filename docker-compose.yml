@@ -1,0 +1,10 @@
+version: '3'
+services:
+  miglio_nginx:
+    # name: miglio_nginx
+    image: miglio.dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+     - "80:80"
