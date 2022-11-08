@@ -1,7 +1,7 @@
 User-agent: *
 
-Disallow: /
-Allow: /index.php
+Disallow: /icon
+Allow: /index.html
 
 
-Sitemap: https://www.miglio.dev/sitemap.xml
+Sitemap: https://miglio.dev/sitemap.xml
