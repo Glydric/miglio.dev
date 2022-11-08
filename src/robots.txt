@@ -1,7 +1,9 @@
 User-agent: *
 
-Disallow: /icon
 Allow: /index.html
+Allow: /contatti.html
+Disallow: /icon
+Disallow: /github
 
 
 Sitemap: https://miglio.dev/sitemap.xml
