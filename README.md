@@ -1,2 +1,2 @@
-# [miglio.dev](miglio.dev)
-My personal website available at [miglio.dev](miglio.dev)
+# [miglio.dev](https://miglio.dev)
+My personal website available at [miglio.dev](https://miglio.dev)
