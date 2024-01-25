@@ -7,14 +7,9 @@ fetch('https://api.github.com/repos/Glydric/FlowTime')
     .then(response => response.json())
     .then(data => {
         // Create and populate the HTML elements
-        const nameElement = document.createElement('p');
-        nameElement.textContent = data.owner.login+'/'+data.name;
-        repoDetailsDiv.appendChild(nameElement);
-
-        const avatarElement = document.createElement('img');
-        avatarElement.id = 'image';
-        avatarElement.src = data.image;
-        avatarElement.alt = '';
-        repoDetailsDiv.appendChild(avatarElement);
+        const linkElement = document.createElement('a');
+        linkElement.href = data.html_url;
+        linkElement.textContent = data.full_name
+        repoDetailsDiv.appendChild(linkElement);
     })
     .catch(error => console.error(error));
