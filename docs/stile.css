@@ -57,18 +57,46 @@ img {
   color: rgb(0, 121, 0);
 }
 
-#sinistra {
-  width: 50%;
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container div {
+  flex: 50%;
+  padding: 8px;
+}
+
+
+/* #sinistra {
+  width: 48%;
   float: left;
 }
 
 #destra {
-  width: 50%;
+  width: 48%;
   float: right;
-}
+} */
 
 .icon {
   width: 32px;
   height: 32px;
   border-radius: 10px;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-container div {
+    flex: 100%;
+    padding: 0px;
+  }
+
+  body {
+    padding: 20px;
+  }
 }
