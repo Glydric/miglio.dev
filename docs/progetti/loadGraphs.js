@@ -1,20 +1,25 @@
-const div = document.getElementById("sinistra");
+const div = document.getElementById("destra");
 const repoDetailsDiv = document.createElement('div');
 repoDetailsDiv.id = 'repo';
 div.appendChild(repoDetailsDiv)
 
-const projects = ["Glydric/FlowTime","unicam-complex-system/camera-security-system-monorepo"]
+const projects = ["Glydric/FlowTime"]
 // Fetch repository data from GitHub REST API
 for (let project of projects) {
-    fetch(`https://api.github.com/repos/${project}`)
-        .then(response => response.json())
-        .then(data => {
-            // Create and populate the HTML elements
-            const linkElement = document.createElement('a');
-            linkElement.href = data.html_url;
-            linkElement.textContent = data.full_name
-            repoDetailsDiv.appendChild(linkElement);
-            repoDetailsDiv.appendChild(document.createElement('br'));
-        })
-        .catch(error => console.error(error));
+    const linkElement = document.createElement('a');
+    linkElement.href = `https://github.com/${project}`;
+    linkElement.textContent = project
+
+    const li = document.createElement('li');
+    li.appendChild(linkElement);
+
+    repoDetailsDiv.appendChild(li);
+
+    // fetch(`https://api.github.com/repos/${project}`)
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         // Create and populate the HTML elements
+
+    //     })
+    //     .catch(error => console.error(error));
 }
