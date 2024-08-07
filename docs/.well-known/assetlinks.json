@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "dev.miglio.radiolinea",
+            "sha256_cert_fingerprints": [
+                "C1:BA:0B:49:E9:74:2B:A1:A7:12:50:47:F7:A2:42:13:E0:E6:6C:F9:A6:7D:61:65:58:7C:AD:D6:2B:E9:F6:CE"
+            ]
+        }
+    }
+]
